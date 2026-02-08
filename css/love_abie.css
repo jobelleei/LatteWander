@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bagel+Fat+One&display=swap');
+
+.bagel-fat-one-regular {
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.azeret-mono {
+    font-family: "Azeret Mono", serif;
+    font-optical-sizing: auto;
+}
+
+html, body, section {
+    background: #F0E4CD;
+}
+
+#main {
+    background-image: url(/love_abie/cover.PNG);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+#cafename {
+    margin-top: 50px;
+    color: #332518;
+    font-family: "Bagel Fat One", serif;
+    text-align: center;
+}
+
+#address, #ig {
+    text-align: center;
+    font-family: "Azeret Mono", monospace;
+    color: #332518;
+}
+
+#address:hover, #ig:hover {
+    font-weight: 500;
+    color: #9C8568;
+}
+
+#photo2 {
+    width: 400px;
+    border-radius: 15%;
+}
+
+#col {
+    margin-top: 80px;
+}
+
+#cafebground {
+    font-family: "Bagel Fat One", serif;
+    color: #332518;
+}
+
+#button:hover {
+    background-color: #DC143C;    
+}
+
+#intro {
+    font-family: "Azeret Mono", monospace;
+    color: #332518;
+}
+
+#drinkscon {
+    margin-top: 100px;
+}
+
+#reco {
+    font-family: "Bagel Fat One", serif;
+    color: #332518;
+}
+
+.card {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 260px;
+    height: 400px;
+    background: linear-gradient(#9C8568 ,#B39978, #C6B49E);
+    position: relative;
+    transform: skewY(-10deg);
+    border: 5px solid;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+  
+.card::before {
+    content: '';
+    width: 10px;
+    height: 400px;
+    background: #B39978;
+    position: absolute;
+    top: -5px;
+    left: -14.7px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    border: none;
+    transition: all 0.5s;
+}
+  
+.card::after {
+    content: '';
+    height: 10px;
+    width: 260px;
+    background: #9C8568;
+    position: absolute;
+    top: -14.7px;
+    left: -5px;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    border: none;
+    transition: all 0.5s;
+}
+  
+.card:hover {
+    transform: skewY(0deg);
+}
+  
+.card:hover::before {
+    width: 0px;
+    height: 248px;
+    left: 0;
+    top: 0.1px;
+}
+  
+.card:hover::after {
+    width: 184px;
+    height: 0px;
+    left: 0.1px;
+    top: 0;
+}
+
+#drink1 {
+    margin: -60px -45px;
+    width: 330px;
+}
+
+#drink2 {
+    margin: -60px -30px;
+    width: 290px;
+}
+
+#drink3 {
+    margin: -78px -45px;
+    width: 320px;
+}
+
+#drink4 {
+    margin: -80px -35px;
+    width: 300px;
+}
+
+#price {
+    margin-top: 50px;
+}
+
+#drinkname, #price {
+    font-family: "Azeret Mono", monospace;
+    color: #EEE6D9;
+}
+
+#gallerycon {
+    margin-top: 130px;
+}
+
+#gallery {
+    font-family: "Bagel Fat One", serif;
+    color: #332518;
+}
+
+.card1, .card2 {
+   margin: 50px;
+}
+
+.card2 {
+    position: relative;
+    display: flex;
+    height: 310px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #8264487a;
+    transition: opacity 0.3s ease;
+}
+  
+.card2:hover #overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+  
+.card2 .card-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+    background-color: #332518;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    border: none;
+    opacity: 0;
+    scale: 0;
+    transform-origin: 0 0;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+.card2:hover .card-btn {
+    opacity: 1;
+    scale: 1;
+}
+  
+.card2 .card-btn:hover {
+    box-shadow: 0 0 0px 5px #694F36;
+}
+  
+.card2 .card-btn:active {
+    scale: 0.95;
+}
+  
+#overlay::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+  
+  .card2:hover #overlay::after {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+.button {
+    position: relative;
+    width: 450px;
+    height: 30px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 0 3em;
+    border: none;
+    background-color: #694F36;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 5px
+}
+   
+.button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background: #9C8568;
+    transition: 0.2s;
+}
+
+.label {
+    font-family: "Azeret Mono", monospace;
+}
+
+#next {
+    width: 25px;
+}
+   
+.button .label {
+    position: relative;
+}
+   
+.button .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+   
+.button:hover::before {
+    height: 100%;
+}
+   
+.button:hover .icon {
+    top: 0;
+    opacity: 1;
+}

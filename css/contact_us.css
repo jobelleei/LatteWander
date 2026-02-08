@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bagel+Fat+One&display=swap');
+
+.bagel-fat-one-regular {
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.azeret-mono {
+    font-family: "Azeret Mono", serif;
+    font-optical-sizing: auto;
+}
+
+html, body, section {
+    background-color: #F0E4CD;
+}
+
+.contact {
+    width: 350px;
+    margin-top: 240px;
+}
+
+#word {
+    color: #332518;
+}
+
+.h1 {
+    font-family: "Bagel Fat One", serif;
+    color: #332518;
+}
+
+.h6 {
+    font-family: "Azeret Mono", serif;
+    color: #332518;
+}
+
+#creator {
+    margin-top: 130px;
+    margin-bottom: 80px;
+    color: #332518;
+}
+
+#jobelle, #kaye {
+    width: 300px;
+}
+
+#name {
+    font-family: "Azeret Mono", serif;
+}
+
+#iglink {
+    text-decoration: none;
+    font-family: "Azeret Mono", serif;
+    color: #332518;
+    text-decoration: none;
+}
+
+#icons {
+    width: 50px;
+}
+
+#username {
+    font-family: "Azeret Mono", serif;
+    text-decoration: none;
+    color: #332518;
+}
+
+#formlabel {
+    text-align: center;
+    font-family: "Azeret Mono", serif;
+}

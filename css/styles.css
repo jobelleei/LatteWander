@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bagel+Fat+One&display=swap');
+
+.bagel-fat-one-regular {
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.azeret-mono {
+    font-family: "Azeret Mono", serif;
+    font-optical-sizing: auto;
+}
+
+html, body {
+    background-color: #B39978;
+}
+
+#intro {
+    text-align: center;
+    font-family: "Azeret Mono", monospace;
+    color: #EEE6D9;
+}
+
+.cafebground {
+    background-color: #EEE6D9;
+}
+
+.carousel-caption {
+    font-family: "Bagel Fat One", serif;
+    color: #EEE6D9;
+}
+
+#logo {
+    width: 300px;
+}
+
+#AboutUs {
+    background-color: #B39978;
+}
+
+#aboutus {
+    font-family: "Bagel Fat One", serif;
+    color: #332518;
+}
+
+#offer {
+    padding-top: 80px;
+    color: #332518;
+    font-family: "Bagel Fat One", serif;
+    opacity:100%;
+}
+
+.flip-card {
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 320px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.rounded {
+    margin-top: 0;
+    width: 230px;
+    border-color: #694F36;
+}
+  
+.name {
+    font-family: "Bagel Fat One", serif;
+    color: #EEE6D9;
+}
+
+.description {
+    font-family: "Azeret Mono", monospace;
+    color: #EEE6D9;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: #694F36;
+    border-radius: 1rem;
+}
+  
+.flip-card-front {
+    background-color: #694F36;
+}
+  
+.flip-card-back {
+    background-color: #d7c19e;
+    outline-color: #694F36;
+    transform: rotateY(180deg);
+}
+
+#title, #name {
+    color: #332518;
+}
+
+.h6 {
+    font-family: "Azeret Mono", monospace;
+}
+
+.h5 {
+    font-family: "Bagel Fat One", serif;
+}

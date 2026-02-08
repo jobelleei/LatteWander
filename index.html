@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Latte Wander</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/global.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jQuery//script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images//logo.jpg" alt="Latte Wander" style="width:40px;" class="rounded-pill"></a>
+        <form class="d-flex" role="search" action="/action_page.php">
+          <input id="placeholder" class="form-control px-2" type="search" placeholder="Find a Cafe..." aria-label="Search">
+          <button id="searchbutton" class="btn0" type="submit">Search</button>
+        </form> 
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><img style="width: 30px;" src="icons//more.png"></span>
+        </button>
+       
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cafés
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="dozy_coffee.html" target="_self">Dozy Coffee</a></li>
+                  <li><a class="dropdown-item" href="love_abie.html" target="_self">Love, Abie</a></li>
+                  <li><a class="dropdown-item" href="anhi_cafe.html" target="_self">Anhi Cafe x Bistro</a></li>
+                  <li><a class="dropdown-item" href="capernaum.html" target="_self">Capernaum & Co.</a></li>
+                  <li><a class="dropdown-item" href="earlybird_cafe.html" target="_self">EarlyBird Cafe</a></li>
+                  <li><a class="dropdown-item" href="grnd.html" target="_self">GRND</a></li>
+                  <li><a class="dropdown-item" href="cafe_cielli.html" target="_self">Café Cielli</a></li>
+                  <li><a class="dropdown-item" href="also_coffee.html" target="_self">Al•so Coffee</a></li>
+                  <li><a class="dropdown-item" href="chn_cafe.html" target="_self">CHN CAFÉ</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="dozy_gallery.html" target="_self">Dozy Coffee</a></li>
+                        <li><a class="dropdown-item" href="loveabie_gallery.html" target="_self">Love, Abie</a></li>
+                        <li><a class="dropdown-item" href="anhicafe_gallery.html" target="_self">Anhi Cafe x Bistro</a></li>
+                        <li><a class="dropdown-item" href="capernaum_gallery.html" target="_self">Capernaum & Co.</a></li>
+                        <li><a class="dropdown-item" href="earlybird_gallery.html" target="_self">EarlyBird Cafe</a></li>
+                        <li><a class="dropdown-item" href="GRND_gallery.html" target="_self">GRND</a></li>
+                        <li><a class="dropdown-item" href="cafecielli_gallery.html" target="_self">Café Cielli</a></li>
+                        <li><a class="dropdown-item" href="alsocoffee_gallery.html" target="_self">Al•so Coffee</a></li>
+                        <li><a class="dropdown-item" href="chncafe_gallery.html" target="_self">CHN CAFÉ</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+              </li>
+            </ul>
+          <div>
+        </div>    
+      </div>     
+    </div>
+  </nav>
+
+  <div id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button id="indicator" type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"></button>
+      <button id="indicator" type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+      <button id="indicator" type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
+      <button id="indicator" type="button" data-bs-target="#home" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images//homepage1.png" alt="Cafe" class="d-block w-100">
+        <div class="carousel-caption">
+          <div class="h1">EXPLORE COFFEE SHOPS WITH US!</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images//homepage2.PNG" alt="Cafe" class="d-block w-100">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images//homepage3.PNG" alt="Cafe" class="d-block w-100">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images//homepage4.PNG" alt="Cafe" class="d-block w-100">
+      </div>
+    </div>
+
+    <button id="control" class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button id="control" class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section id="AboutUs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-3"><img id="logo" src="images//logo.jpg" class="rounded-circle mx-auto d-block p-4"></div>
+            <div class="col-lg-9">
+              <div id="aboutus" class="h2 text-center pt-4">About Us</div>
+                <p id="intro" class="text-center pt-4">Latte Wander was founded by two persons who enjoy drinking coffee and decided to hunt for cafes throughout Bacolod City in order to introduce local coffee shops and highlight great places with beautiful ambiance. The hunt for cafe also helps local businesses by advertising their top sellers and addresses. Photos taken from the coffee shops are also released for media purposes, allowing visitors to view the places and spots of the coffee shops. Join us and start Cafe Hunting!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cafebground">
+    <div class="container">
+      <div id="offer" class="h2 text-center">See what these cafes have to offer!</div>
+      
+      <div class="cafes">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+                <a href="dozy_coffee.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//dozylogo.jpg">
+                              <h4 class="name text-center mt-2">Dozy Coffee</h4>
+                              <p class="description text-center">Drinks</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">Dozy Coffee</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div id="flip" class="col-lg-4">
+                <a href="love_abie.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//love_abielogo.jpg">
+                              <h4 class="name text-center mt-2">Love, Abie</h4>
+                              <p class="description text-center">Food and Drinks</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">Love, Abie</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-4">
+                <a href="anhi_cafe.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//Anhi_Cafelogo.jpg">
+                              <h4 class="name text-center mt-2">Anhi Cafe x Bistro</h4>
+                              <p class="description text-center">Food and Drinks</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">Anhi Cafe x Bistro</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-4">
+                <a href="capernaum.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//capernaum_logo.jpg">
+                              <h4 class="name text-center mt-2">Capernaum & Co.</h4>
+                              <p class="description text-center">Foods and Drinks</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">Capernaum & Co.</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-4">
+                <a href="earlybird_cafe.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images///earlybird_logo.png">
+                              <h4 class="name text-center mt-2">EarlyBird Cafe</h4>
+                              <p class="description text-center">Drinks and Pastries</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">EarlyBird Cafe</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-4">
+                <a href="GRND.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//GRND_logo.jpg">
+                              <h4 class="name text-center mt-2">GRND</h4>
+                              <p class="description text-center">Drinks</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">GRND</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-4">
+                <a href="cafe_cielli.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//cielli_logo.jpg">
+                              <h4 class="name text-center mt-2">Café Cielli</h4>
+                              <p class="description text-center">Drinks and Pastries</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">Café Cielli</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-4">
+                <a href="also_coffee.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//also_logo.jpg">
+                              <h4 class="name text-center mt-2">Al•so Coffee</h4>
+                              <p class="description text-center">Food and Drinks</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">Al•so Coffee</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+
+              <div class="col-lg-4">
+                <a href="chn_cafe.html" target="_self">
+                  <div id="flipcard" class="flip-card mx-auto">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <img class="rounded mx-auto d-block mt-2" src="images//chn_logo.jpg">
+                              <h4 class="name text-center mt-2">CHN CAFÉ</h4>
+                              <p class="description text-center">Food and Drinks</p>
+                          </div>
+                          <div class="flip-card-back">
+                              <div id="title" class="h6 text-center">Click here</div>
+                              <div id="title" class="h6 text-center">to know</div>
+                              <div id="title" class="h6 text-center">more about</div>
+                              <div id="name" class="h5 text-center mt-1">CHN CAFÉ</div>
+                          </div>
+                      </div>
+                  </div>
+                </a> 
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mt-5">
+          <div class="h3">Latte Wander</div>
+        </div>
+
+        <div class="col-lg-4 mt-5">
+          <div class="h4">ABOUT</div>
+          <div id="footerlink">
+            <a id="footer" href="about_us.html" target="_self"><p class="mt-3">About us</p></a>
+            <a id="footer" href="contact_us.html" target="_self"><p class="h6">Contact Us</p></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-5">
+          <div class="h4">FOLLOW US!</div>
+          <a id="footer" href="mailto:latte.wander.bcd@gmail.com" title="Send us an Email!"><img id="email" src="icons//emailIcon.png"></a>
+          <a id="footer" href="https://www.instagram.com/latte.wander/" title="Visit our Instagram!"><img id="instagram" class="mx-3" src="icons//igIcon.png"></a>
+        </div>
+      </div>
+    </div>
+</section>
+</body>
+</html>

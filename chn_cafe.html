@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Latte Wander</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/chn_cafe.css">
+  <link rel="stylesheet" href="css/global.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jQuery//cafe.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images//logo.jpg" alt="Latte Wander" style="width:40px;" class="rounded-pill"></a>
+            <form class="d-flex" role="search" action="/action_page.php">
+              <input id="placeholder" class="form-control px-2" type="search" placeholder="Find a Cafe..." aria-label="Search">
+              <button id="searchbutton" class="btn0" type="submit">Search</button>
+            </form> 
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><img style="width: 30px;" src="icons//more.png"></span>
+            </button>
+           
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cafés
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="dozy_coffee.html" target="_self">Dozy Coffee</a></li>
+                      <li><a class="dropdown-item" href="love_abie.html" target="_self">Love, Abie</a></li>
+                      <li><a class="dropdown-item" href="anhi_cafe.html" target="_self">Anhi Cafe x Bistro</a></li>
+                      <li><a class="dropdown-item" href="capernaum.html" target="_self">Capernaum & Co.</a></li>
+                      <li><a class="dropdown-item" href="earlybird_cafe.html" target="_self">EarlyBird Cafe</a></li>
+                      <li><a class="dropdown-item" href="grnd.html" target="_self">GRND</a></li>
+                      <li><a class="dropdown-item" href="cafe_cielli.html" target="_self">Café Cielli</a></li>
+                      <li><a class="dropdown-item" href="also_coffee.html" target="_self">Al•so Coffee</a></li>
+                      <li><a class="dropdown-item" href="chn_cafe.html" target="_self">CHN CAFÉ</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gallery
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="dozy_gallery.html" target="_self">Dozy Coffee</a></li>
+                            <li><a class="dropdown-item" href="loveabie_gallery.html" target="_self">Love, Abie</a></li>
+                            <li><a class="dropdown-item" href="anhicafe_gallery.html" target="_self">Anhi Cafe x Bistro</a></li>
+                            <li><a class="dropdown-item" href="capernaum_gallery.html" target="_self">Capernaum & Co.</a></li>
+                            <li><a class="dropdown-item" href="earlybird_gallery.html" target="_self">EarlyBird Cafe</a></li>
+                            <li><a class="dropdown-item" href="GRND_gallery.html" target="_self">GRND</a></li>
+                            <li><a class="dropdown-item" href="cafecielli_gallery.html" target="_self">Café Cielli</a></li>
+                            <li><a class="dropdown-item" href="alsocoffee_gallery.html" target="_self">Al•so Coffee</a></li>
+                            <li><a class="dropdown-item" href="chncafe_gallery.html" target="_self">CHN CAFÉ</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">About Us</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                  </li>
+                </ul>
+              <div>
+            </div>    
+          </div>     
+        </div>
+      </nav>
+
+    <div class="container-fluid" id="cover-container">
+        <div id="cover">
+            <img src="chn_cafe//cover.PNG" alt="">
+            <div class="container overlay-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 id="dozy">CHN CAFÉ</h1>
+                        <div>
+                            <a id="address" href="https://maps.app.goo.gl/qep5Pd2pBKMKvyPv5" target="_blank" title="CHN CAFÉ's address" style="text-decoration: none;">
+                                <h6>CHN CAFÉ BACOLOD, 23rd Street, Lacson St, Bacolod, 6100 Negros Occidental</h6>
+                            </a>
+                            <a id="ig" href="https://www.instagram.com/chncafe/" target="_blank" title="CHN CAFÉ's instagram" style="text-decoration: none;">
+                                <h6>@chncafe</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img id="photo2" src="chn_cafe//img_1.JPG" class="mx-auto d-block mt-5" alt="">
+                </div>
+
+                <div id="col" class="col-lg-8 text-center">
+                    <div id="cafebground" class="h2 text-center">Café Background</div>
+                    <p id="intro" class="text-center mt-4">CHN Café, located at the corner of 23rd and Lacson Streets in Brgy 5, Bacolod City, offers a cozy and welcoming space for coffee enthusiasts and casual diners. Known for its freshly crafted coffee and delightful pastries, the café creates a charming atmosphere ideal for relaxing or catching up with friends. Operating from 9 AM to 5 PM daily, CHN Café emphasizes quality and comfort, making it a popular spot for locals and visitors alike. Its convenient location within the city ensures easy access, while the warm service adds to the memorable experience. Whether you're seeking a quiet corner or a vibrant social setting, CHN Café delivers both.</p>
+                    <input id="button" type="button" onclick="changeButton()" value="Add to Favorites ♡">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div #container class="container">
+            <div class="row">
+                <div id="drinkscon" class="col-lg-12">
+                    <hr>
+                    <div id="reco" class="h3 text-center">Drinks Recommendations</div>
+                    <hr>
+                    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card mx-auto d-block">
+                                    <div class="card-body">
+                                        <img id="drink1" src="chn_cafe//purple_haze.PNG" alt="Purple Haze">
+                                        <h5 id="drinkname" class="text-center mt-1"><strong>Purple Haze</strong></h5>
+                                        <p id="price" class="text-center mt-1">160</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card mx-auto d-block">
+                                    <div class="card-body">
+                                        <img id="drink2" src="chn_cafe//sea_salt_caramel.PNG" alt="Sea Salt Caramel">
+                                        <h5 id="drinkname" class="text-center mt-5"><strong>Sea Salt Caramel</strong></h5>
+                                        <p id="price" class="text-center mt-1">170</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card mx-auto d-block">
+                                    <div class="card-body">
+                                        <img id="drink3" src="chn_cafe//peachy_cooler.PNG" alt="Peachy Cooler">
+                                        <h5 id="drinkname" class="text-center mt-5"><strong>Peachy Cooler</strong></h5>
+                                        <p id="price" class="text-center mt-1">140</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="gallerycon" class="col-lg-12">
+                    <hr>
+                    <div id="gallery" class="h3 text-center">CHN CAFÉ'S GALLERY</div>
+                    <hr>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_2.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_3.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_4.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_5.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_6.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_7.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_8.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card1">
+                                    <div class="card-body">
+                                        <img id="cafephoto" src="chn_cafe//img_9.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="col-lg-4">
+                                    <div class="card2">
+                                        <img id="cafephoto" src="chn_cafe//img_10.JPG" class="img-fluid mx-auto d-block" alt="CHN Café photo">
+                                    <div id="overlay"></div>
+                                    <a href="chncafe_gallery.html" target="_self">
+                                        <button class="card-btn">Click for more photos</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a href="chncafe_gallery.html" target="_self" alt="click here" style="text-decoration: none;">
+                                    <div class="button mx-auto d-block mb-5">
+                                        <span class="label mx-auto d-block mt-1">Click here to view more photos</span>
+                                        <span class="icon">
+                                        <img id="next" src="icons//next.png">
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mt-5">
+              <div class="h3">Latte Wander</div>
+            </div>
+    
+            <div class="col-lg-4 mt-5">
+              <div class="h4">ABOUT</div>
+              <div id="footerlink">
+                <a id="footer" href="about_us.html" target="_self"><p class="mt-3">About us</p></a>
+                <a id="footer" href="contact_us.html" target="_self"><p class="h6">Contact Us</p></a>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 mt-5">
+              <div class="h4">FOLLOW US!</div>
+              <a id="footer" href="mailto:latte.wander.bcd@gmail.com" title="Send us an Email!"><img id="email" src="icons//emailIcon.png"></a>
+              <a id="footer" href="https://www.instagram.com/latte.wander/" title="Visit our Instagram!"><img id="instagram" class="mx-3" src="icons//igIcon.png"></a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+</body>
+</html>
+    

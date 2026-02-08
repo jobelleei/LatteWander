@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bagel+Fat+One&display=swap');
+
+.bagel-fat-one-regular {
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.azeret-mono {
+    font-family: "Azeret Mono", serif;
+    font-optical-sizing: auto;
+}
+
+#footer:hover {
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: #B39978;
+}
+
+#searchbutton {
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    background-color: #694F36;
+    font-family: "Azeret Mono", monospace;
+    color: #EEE6D9;
+}
+
+#searchbutton:hover {
+    background-color: #826448;
+}
+
+#placeholder {
+    height: 40px;
+    width: 80%;
+    margin-right: -35px;
+    border-radius: 60px;
+    outline: none;
+    border: 2px solid #694F36;
+    font-family: "Azeret Mono", monospace;
+}
+
+.offcanvas-title {
+    font-family: "Azeret Mono", monospace;
+    color: #694F36;
+}
+
+.nav-link {
+    margin-right: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Azeret Mono", monospace;
+    color: black;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+.dropdown-menu {
+    background-color: white;
+    color: #332518;
+}
+
+.dropdown-menu a:hover {
+    background-color: #EEE6D9;
+    color: #332518;
+}
+
+#title {
+    font-family: "Azeret Mono", monospace;
+    color: #694F36;
+}
+
+#name {
+    font-family: "Bagel Fat One", serif;
+    color: #694F36;
+}
+
+.footer {
+    background-color: #B39978;
+}
+
+.h3 {
+    font-family: "Bagel Fat One", serif;
+}
+
+.h4 {
+    font-family: "Bagel Fat One", serif;
+}
+
+#footer{
+    font-family: "Azeret Mono", monospace;
+    text-decoration: none;
+    color: #EEE6D9;
+}
+
+#email, #instagram {
+    margin-right: 5px;
+    margin-bottom: 100px;
+    width: 50px;
+}
+
+#email:hover, #instagram:hover {
+    width: 45px;
+}
+
+
+#cover-container {
+    position: relative; 
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#cover {
+    position: relative;
+    width: 100%;
+}
+
+#cover img {
+    display: block; 
+    width: 100%;    
+    height: auto;   
+}
+
+.overlay-container {
+    position: absolute;  
+    top: 0;              
+    left: 0;            
+    right: 0;            
+    bottom: 0;           
+    display: flex;       
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;     
+    color: white;       
+    text-align: center;  
+    padding: 20px;       
+}
+
+.overlay-container h1 {
+    font-family: "Bagel Fat One", serif;
+    color: #332518;
+    font-size: 3rem;     
+    margin-bottom: 15px; 
+}
+
+.overlay-container h6 {
+    font-family: "Azeret Mono", serif;
+    color: #332518;
+    font-size: 1.2rem;   
+    margin-bottom: 10px; 
+}
+
+h6:hover {
+    color: #533e2a;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #27190D
+}
+
+.navbar-nav .nav-link.active {
+    color: #27190D !important; 
+    font-weight: bold;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item.active {
+    color: #27190D !important;
+    background-color: #dbc19f !important; 
+    font-weight: bold;
+}

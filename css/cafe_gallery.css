@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bagel+Fat+One&display=swap');
+
+.bagel-fat-one-regular {
+    font-family: "Bagel Fat One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body, section {
+    background: #F0E4CD;
+}
+
+#gallery {
+    font-family: "Bagel Fat One", serif;
+    color: #332518;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#cafephoto {
+    margin-top: 25px;
+    margin-bottom: 35PX;
+    width: 350px;
+}
